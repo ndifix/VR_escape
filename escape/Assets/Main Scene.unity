@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44300503, g: 0.49219614, b: 0.57192355, a: 1}
+  m_IndirectSpecularColor: {r: 0.43749005, g: 0.48531115, b: 0.56558555, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -524,13 +524,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706949988}
-  m_LocalRotation: {x: 0.5027804, y: 0.031779837, z: 0.031779837, w: 0.863245}
+  m_LocalRotation: {x: -0.122787744, y: 0.6963643, z: -0.66446304, w: -0.2418448}
   m_LocalPosition: {x: 0, y: 90, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 60, y: 10, z: 10}
+  m_LocalEulerAnglesHint: {x: 80, y: 270, z: 60}
 --- !u!1 &723091514
 GameObject:
   m_ObjectHideFlags: 0
@@ -740,6 +740,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 734980159}
+  - component: {fileID: 734980160}
+  - component: {fileID: 734980161}
   m_Layer: 0
   m_Name: Desk0
   m_TagString: Untagged
@@ -772,8 +774,37 @@ Transform:
   - {fileID: 1532040877}
   - {fileID: 130461383}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &734980160
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734980158}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.6, y: 0.7, z: 1.4}
+  m_Center: {x: 0, y: -0.3, z: 0.35}
+--- !u!54 &734980161
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734980158}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &898979022
 GameObject:
   m_ObjectHideFlags: 0
@@ -1505,7 +1536,7 @@ PrefabInstance:
     - target: {fileID: 7540140975783215590, guid: 53fdf0040fa2c394b9c84c30225c311a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7540140975783215590, guid: 53fdf0040fa2c394b9c84c30225c311a,
         type: 3}
@@ -2310,7 +2341,7 @@ PrefabInstance:
     - target: {fileID: 7540140975783215590, guid: 53fdf0040fa2c394b9c84c30225c311a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7540140975783215590, guid: 53fdf0040fa2c394b9c84c30225c311a,
         type: 3}
