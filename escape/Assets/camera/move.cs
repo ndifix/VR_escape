@@ -4,13 +4,11 @@ using UnityEngine;
 using UnityEngine.XR;
 
 public class move : MonoBehaviour {
-	public int speed = 10;
+	public float speed = 0.1f;
 	private float pi=3.141592f;
+	float rAngle=2;
 	// Use this for initialization
 	void Start () {
-        Vector3 vec;
-	    vec.x = 0;vec.y = 1;vec.z = 0;
-		this.transform.position = vec;
 	}
 	
 	// Update is called once per frame
@@ -40,17 +38,12 @@ public class move : MonoBehaviour {
             //回転移動
             if (Input.GetKey(KeyCode.A))
             {
-                this.transform.Rotate(0, -5, 0);
+                this.transform.Rotate(0, -rAngle, 0);
             }
             if (Input.GetKey(KeyCode.D))
             {
-                this.transform.Rotate(0, 5, 0);
+                this.transform.Rotate(0, rAngle, 0);
             }
-        }
-
-        if (XRDevice.isPresent)
-        {///Riftあり
-            
         }
 	}
 }
